@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwagala Styles | Hair, Makeup &amp; Beauty in Nansana, Nabweru</title>
+    <meta name="description" content="Kwagala Styles offers hair plaiting, wig installation, bridal and casual makeup, manicure, pedicure and eyelash extensions in Nansana, Nabweru.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Great+Vibes&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Apply saved theme before the page paints (prevents a flash) -->
+    <script>
+        (function () {
+            try {
+                var theme = localStorage.getItem("theme");
+                if (!theme) {
+                    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                document.documentElement.setAttribute("data-theme", theme);
+            } catch (e) {}
+        })();
+    </script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- NAVBAR -->
+    <header class="site-header">
+        <nav class="navbar">
+
+            <a href="#home" class="logo">KWAGALA <span>Styles</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="nav-cta">
+                    <a href="https://wa.me/256777704252?text=Hello%20Kwagala%20Styles%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                       target="_blank" rel="noopener">Book Now</a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch between light and dark mode">
+                    <span class="icon-moon">☾</span>
+                    <span class="icon-sun">☀</span>
+                </button>
+
+                <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section id="home" class="hero">
+
+            <div class="hero-text">
+                <p class="eyebrow">Nansana · Nabweru</p>
+
+                <h1>Embrace Your <span>Beauty</span></h1>
+
+                <p class="hero-description">
+                    Hair, makeup, nails and lashes, done with care.
+                    Book your appointment today.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="https://wa.me/256777704252?text=Hello%20Kwagala%20Styles%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                       class="btn btn-primary" target="_blank" rel="noopener">
+                        Book on WhatsApp <span class="arrow">→</span>
+                    </a>
+                    <a href="#services" class="btn btn-ghost">View Services</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-blob"></div>
+                <img src="images/polkadress.png.jpeg" alt="Edith Kwagala, founder of Kwagala Styles, smiling among white flowers">
+                <div class="hero-badge">
+                    <small>Founder &amp; Stylist</small>
+                    <strong>Edith Kwagala</strong>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="section">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">What we offer</p>
+                <h2>Our <span>services</span></h2>
+            </div>
+
+            <div class="services-grid">
+
+                <article class="service-card reveal">
+                    <span class="service-number">01</span>
+                    <h3>Hair Plaiting &amp; Styling</h3>
+                    <p>Neat, long-lasting braids and styles for every occasion.</p>
+                    <a href="https://wa.me/256777704252" class="service-link" data-service="Hair Plaiting & Styling" target="_blank" rel="noopener">Book this →</a>
+                </article>
+
+                <article class="service-card reveal">
+                    <span class="service-number">02</span>
+                    <h3>Wig Installation &amp; Styling</h3>
+                    <p>Flawless installs and styling for a natural, confident look.</p>
+                    <a href="https://wa.me/256777704252" class="service-link" data-service="Wig Installation & Styling" target="_blank" rel="noopener">Book this →</a>
+                </article>
+
+                <article class="service-card reveal">
+                    <span class="service-number">03</span>
+                    <h3>Bridal Hair &amp; Makeup</h3>
+                    <p>Elegant, camera-ready looks for your big day.</p>
+                    <a href="https://wa.me/256777704252" class="service-link" data-service="Bridal Hair & Makeup" target="_blank" rel="noopener">Book this →</a>
+                </article>
+
+                <article class="service-card reveal">
+                    <span class="service-number">04</span>
+                    <h3>Casual Makeup</h3>
+                    <p>Fresh, polished makeup for events, dates and everyday.</p>
+                    <a href="https://wa.me/256777704252" class="service-link" data-service="Casual Makeup" target="_blank" rel="noopener">Book this →</a>
+                </article>
+
+                <article class="service-card reveal">
+                    <span class="service-number">05</span>
+                    <h3>Manicure &amp; Pedicure</h3>
+                    <p>Clean, pretty hands and feet, finished to perfection.</p>
+                    <a href="https://wa.me/256777704252" class="service-link" data-service="Manicure & Pedicure" target="_blank" rel="noopener">Book this →</a>
+                </article>
+
+                <article class="service-card reveal">
+                    <span class="service-number">06</span>
+                    <h3>Eyelash Extensions</h3>
+                    <p>Soft, full lashes that frame your eyes beautifully.</p>
+                    <a href="https://wa.me/256777704252" class="service-link" data-service="Eyelash Extensions" target="_blank" rel="noopener">Book this →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">Meet the founder</p>
+                <h2>Beauty with <span>purpose</span></h2>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-photo reveal">
+                    <img src="images/reddress.png.jpeg" alt="Edith Kwagala, founder of Kwagala Styles, in a polka-dot dress">
+                </div>
+
+                <div class="about-text reveal">
+                    <p>
+                        Hi, I'm Edith Kwagala, the founder of Kwagala Styles. I started
+                        the business in September 2025 so every client can leave feeling
+                        confident and beautiful in her own skin.
+                    </p>
+
+                    <p class="verse">Inspired by Psalm 139:14</p>
+
+                    <div class="about-facts">
+                        <div class="fact">
+                            <strong>2025</strong>
+                            <span>Founded</span>
+                        </div>
+                        <div class="fact">
+                            <strong>Nabweru</strong>
+                            <span>Nansana</span>
+                        </div>
+                        <div class="fact">
+                            <strong>Bridal</strong>
+                            <span>&amp; everyday looks</span>
+                        </div>
+                    </div>
+
+                   
+                    <a href="https://kwagalaedith.netlify.app/" class="portfolio-link" target="_blank" rel="noopener">
+                        Also a software engineer · View my portfolio ↗
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery" class="section">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">Our work</p>
+                <h2>The <span>gallery</span></h2>
+            </div>
+
+           
+            <div class="gallery-grid">
+
+                <figure class="gallery-item reveal">
+                    <span>Makeup</span>
+                    <video src="images/makeup9.mp4" autoplay muted loop playsinline preload="metadata" controls onerror="this.remove()"></video>
+            </figure>
+
+                <figure class="gallery-item reveal">
+                    <span>Gel</span>
+                    <video src="images/gel.mp4" autoplay muted loop playsinline preload="metadata" controls onerror="this.remove()"></video>
+                </figure>
+
+                <figure class="gallery-item reveal">
+                    <span>Manicure and pedicure</span>
+                    <video src="images/nails.mp4" autoplay muted loop playsinline preload="metadata" controls onerror="this.remove()"></video>
+                </figure>
+
+                <figure class="gallery-item reveal">
+                    <span>Wig installation</span>
+                    <video src="images/wig.mp4" autoplay muted loop playsinline preload="metadata" controls onerror="this.remove()"></video>
+                </figure>
+
+                <figure class="gallery-item reveal">
+                    <span>Eyelash  Extensions</span>
+                   <video src="images/lashes.mp4" autoplay muted loop playsinline preload="metadata" controls onerror="this.remove()"></video>
+                </figure>
+
+                <figure class="gallery-item reveal">
+                    <span>Gel</span>
+                    <video src="images/messybun.mp4" autoplay muted loop playsinline preload="metadata" controls onerror="this.remove()"></video>
+                </figure>
+
+            </div>
+
+
+            
+            <p class="gallery-note reveal">
+                More looks on TikTok:
+                <a href="https://www.tiktok.com/@kwagalastyles" target="_blank" rel="noopener">@kwagalastyles</a>
+            </p>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">Book your appointment</p>
+                <h2>Visit or <span>contact us</span></h2>
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-info">
+
+                    <a class="contact-card reveal" href="tel:+256750064972">
+                        <span class="contact-icon">☎</span>
+                        <div>
+                            <small>Call</small>
+                            <strong>0750 064972</strong>
+                        </div>
+                    </a>
+
+                    <a class="contact-card reveal"
+                       href="https://wa.me/256777704252?text=Hello%20Kwagala%20Styles%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                       target="_blank" rel="noopener">
+                        <span class="contact-icon">✆</span>
+                        <div>
+                            <small>WhatsApp</small>
+                            <strong>0777 704252</strong>
+                        </div>
+                    </a>
+
+                    <a class="contact-card reveal"
+                       href="https://www.google.com/maps/search/?api=1&query=Total+Petrol+Station+Nabweru+Junction+Nansana"
+                       target="_blank" rel="noopener">
+                        <span class="contact-icon">⌖</span>
+                        <div>
+                            <small>Location · Get directions</small>
+                            <strong>Nabweru, Nansana</strong>
+                            <span>Opposite Total Petrol Station, next to Nabweru junction</span>
+                        </div>
+                    </a>
+
+                    <a class="contact-card reveal"
+                       href="https://www.tiktok.com/@kwagalastyles"
+                       target="_blank" rel="noopener">
+                        <span class="contact-icon">♪</span>
+                        <div>
+                            <small>TikTok</small>
+                            <strong>@kwagalastyles</strong>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="flyer reveal">
+                    <img src="images/logo.png.jpeg" alt="Kwagala Styles flyer showing services, phone numbers and location">
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-logo">KWAGALA <span>Styles</span></p>
+        <p>"Embrace Your Beauty" · Psalm 139:14</p>
+        <p>© 2026 Kwagala Styles. All rights reserved.</p>
+    </footer>
+
+    <a class="wa-float"
+       href="https://wa.me/256777704252?text=Hello%20Kwagala%20Styles%2C%20I%20would%20like%20to%20book%20an%20appointment."
+       target="_blank" rel="noopener" aria-label="Chat with Kwagala Styles on WhatsApp">
+        <span>✆</span> WhatsApp
+    </a>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+</body>
+
+</html>
